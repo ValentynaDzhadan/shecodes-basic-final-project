@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Running</title>
+
+    <style>
+      body {
+        background-color: #1a1a1d;
+      }
+
+      h1 {
+        font-weight: 900;
+        font-size: 40px;
+        color: #c3073f;
+        margin-bottom: 20px;
+      }
+      h2 {
+        color: #e2e2e2;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+      }
+      p {
+        text-indent: 30px;
+        line-height: 1.5;
+        letter-spacing: 0.6px;
+        font-size: 16px;
+        text-align: justify;
+      }
+      h3 {
+        font-size: 24px;
+        margin: 30px;
+      }
+      ol {
+        text-align: justify;
+        letter-spacing: 0.6px;
+        margin: 30px 0;
+      }
+      li {
+        margin: 15px 0;
+      }
+      .container {
+        max-width: 800px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        letter-spacing: 0.6px;
+        text-align: center;
+        color: #ccc8c8;
+        padding: 20px;
+        margin: 0 auto;
+      }
+      .learn-more {
+        display: block;
+        font-weight: 600;
+        font-size: 18px;
+        text-align: left;
+        text-decoration: none;
+        color: #6f2232;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+        color: #950740;
+      }
+      .list-item-heading {
+        font-weight: 600;
+        text-decoration: underline;
+      }
+
+      .generate-plan-button {
+        width: 220px;
+        height: 50px;
+        border: 2px solid#6f2232;
+        outline: none;
+        color: #fff;
+        letter-spacing: 1px;
+        background: #1a1a1d;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+        box-shadow: 0 1px 20px rgb(111, 34, 50, 0.5);
+      }
+
+      .generate-plan-button:before {
+        content: "";
+        background: linear-gradient(
+          45deg,
+          #ff0000,
+          #ff7300,
+          #fffb00,
+          #48ff00,
+          #00ffd5,
+          #002bff,
+          #7a00ff,
+          #ff00c8,
+          #ff0000
+        );
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+      }
+
+      .generate-plan-button:active {
+        color: #1a1a1d;
+      }
+
+      .generate-plan-button:active:after {
+        background: transparent;
+      }
+
+      .generate-plan-button:hover:before {
+        opacity: 1;
+      }
+
+      .generate-plan-button:after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #111;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+      }
+
+      @keyframes glowing {
+        0% {
+          background-position: 0 0;
+        }
+        50% {
+          background-position: 400% 0;
+        }
+        100% {
+          background-position: 0 0;
+        }
+      }
+      .rights {
+        font-family: monospace;
+        text-align: center;
+        color: #747477;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>My passion is Running</h1>
+      <h2>
+        Especially in the <strong><em>Mountains</em></strong>
+      </h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/983/original/360_F_165361646_hKLpa5KOMpudaUggvbm5Kak3WzUj1RvY_%281%29.jpg?1680527247"
+        alt="girl running at sunset on mountain trail"
+      />
+      <div>
+        <p>
+          Welcome to my landing page dedicated to running, one of my biggest
+          passions! As a runner myself, I know the many benefits of this
+          activity, from improving physical health to boosting mental wellbeing.
+          Whether you're a seasoned runner or just starting out, this page is
+          for you.
+        </p>
+        <p>
+          At the heart of this landing page is a user interaction designed to
+          inspire and motivate you to take your running to the next level. Below
+          you'll find a custom-made tool that generates personalized running
+          plans based on your fitness level and goals. Simply input your
+          information and let the tool do the rest. <br />
+          But first, let me share with you some of the reasons why running is
+          such a powerful and rewarding activity.
+        </p>
+
+        <a href="https://en.wikipedia.org/wiki/Running" class="learn-more"
+          >Learn more about running</a
+        >
+      </div>
+      <hr />
+      <h3>Benefits of Running:</h3>
+      <ol>
+        <li>
+          <span class="list-item-heading">Improves Cardiovascular Health:</span>
+          Running is one of the best ways to improve your cardiovascular health.
+          It strengthens your heart, lowers your blood pressure, and increases
+          your lung capacity.
+        </li>
+        <li>
+          <span class="list-item-heading">Weight Loss:</span> Running is a
+          highly effective way to burn calories and lose weight. It is estimated
+          that running burns up to 500 calories per hour.
+        </li>
+        <li>
+          <span class="list-item-heading">Reduces Stress:</span> Running is a
+          great way to reduce stress and anxiety. It releases endorphins, which
+          are natural mood enhancers.
+        </li>
+        <li>
+          <span class="list-item-heading">Boosts Confidence:</span> Running can
+          boost your confidence and self-esteem. Achieving your running goals
+          can make you feel accomplished and proud of yourself.
+        </li>
+        <li>
+          <span class="list-item-heading">Community:</span> Running can be a
+          social activity. Joining a running club or group can provide you with
+          a supportive community of like-minded individuals.
+        </li>
+      </ol>
+      <hr />
+
+      <p>
+        Input your information below to generate a custom running plan tailored
+        to your fitness level and goals.
+      </p>
+
+      <button class="generate-plan-button">Generate Plan</button>
+      <p class="rights">This page was built by Val Dzhadan</p>
+    </div>
+    <script>
+      function getFullName() {
+        let fullName = prompt("What's your full name?");
+        if (fullName == 0) {
+          fullName = "dear runner";
+        }
+        return fullName;
+      }
+
+      function getFitnessLevel() {
+        let fitnessLevel = prompt(
+          "What is your current fitness level? Chose one of these options (Beginner, Intermediate, Advanced)"
+        );
+        return fitnessLevel;
+      }
+
+      function getPrimaryGoal() {
+        let primaryGoal = prompt(
+          "What is your primary goal for running? Chose one of these options(Lose weight, Improve endurance, Run a half marathon)"
+        );
+        return primaryGoal;
+      }
+
+      function getPlanProgram() {
+        const fitnessLevel = getFitnessLevel();
+        const primaryGoal = getPrimaryGoal();
+        let planProgram = "";
+        if (fitnessLevel == "Beginner" && primaryGoal == "Lose weight") {
+          planProgram =
+            "Start with brisk walking for 30 minutes, 3 times a week for the first 2 weeks. In the third week, add a minute of jogging after every 4 minutes of walking. Increase the jogging time by a minute every week until you can jog for 30 minutes non-stop. Do this 3 times a week.";
+        } else if (
+          fitnessLevel == "Beginner" &&
+          primaryGoal == "Improve endurance"
+        ) {
+          planProgram =
+            "Start with brisk walking for 20 minutes, 3 times a week for the first 2 weeks. In the third week, add a minute of jogging after every 2 minutes of walking. Increase the jogging time by a minute every week until you can jog for 30 minutes non-stop. Do this 3 times a week.";
+        } else if (
+          fitnessLevel == "Beginner" &&
+          primaryGoal == "Run a half marathon"
+        ) {
+          planProgram =
+            "Start with brisk walking for 30 minutes, 3 times a week for the first 2 weeks. In the third week, add a minute of jogging after every 4 minutes of walking. Increase the jogging time by a minute every week until you can jog for 30 minutes non-stop. In the 10th week, increase the distance to 5 miles, and increase the distance by a mile every week until you can run 13.1 miles non-stop.";
+        } else if (
+          fitnessLevel == "Intermediate" &&
+          primaryGoal == "Lose weight"
+        ) {
+          planProgram =
+            "Start with a 5-minute warm-up walk, followed by 20 minutes of running, and end with a 5-minute cool-down walk. Do this 3 times a week. Increase the running time by 2 minutes every week until you can run for 30 minutes non-stop.";
+        } else if (
+          fitnessLevel == "Intermediate" &&
+          primaryGoal == "Improve endurance"
+        ) {
+          planProgram =
+            "Start with a 10-minute warm-up walk, followed by 30 minutes of running, and end with a 5-minute cool-down walk. Do this 3 times a week. Increase the running time by 5 minutes every week until you can run for 60 minutes non-stop.";
+        } else if (
+          fitnessLevel == "Intermediate" &&
+          primaryGoal == "Run a half marathon"
+        ) {
+          planProgram =
+            "Start with a 10-minute warm-up walk, followed by 40 minutes of running, and end with a 5-minute cool-down walk. Do this 3 times a week. In the 10th week, increase the distance to 5 miles, and increase the distance by a mile every week until you can run 13.1 miles non-stop.";
+        } else if (fitnessLevel == "Advanced" && primaryGoal == "Lose weight") {
+          planProgram =
+            "Start with a 10-minute warm-up walk, followed by 30 minutes of running, and end with a 5-minute cool-down walk. Do this 4 times a week. Increase the running time by 5 minutes every week until you can run for 60 minutes non-stop.";
+        } else if (
+          fitnessLevel == "Advanced" &&
+          primaryGoal == "Improve endurance"
+        ) {
+          planProgram =
+            "Start with a 10-minute warm-up walk, followed by 45 minutes of running, and end with a 5-minute cool-down walk. Do this 4 times a week. Increase the running time by 5 minutes every week until you can run for 90 minutes non-stop.";
+        } else if (
+          fitnessLevel == "Advanced" &&
+          primaryGoal == "Run a half marathon"
+        ) {
+          planProgram =
+            "Start with a 10-minute warm-up walk, followed by 60 minutes of running, and end with a 5-minute cool-down walk. Do this 4 times a week. In the 10th week, increase the distance to 8 miles, and increase the distance by a mile every week until you can run 13.1 miles non-stop.";
+        } else {
+          planProgram =
+            "Oops... Something went wrong... But here is a running plan that can be adjusted to suit any fitness level and primary goal. \n\nStart with a 5-minute warm-up walk to get your body ready for exercise. Run for 30 seconds and walk for 30 seconds. Do this for a total of 5-10 minutes. Increase the total time by 1-2 minutes every week and adjust the running and walking intervals as you feel comfortable. Aim to run 2-3 times a week, with a rest day in between each session to allow your body to recover. Remember to cool down with a 5-minute walk and stretch after every session to help prevent muscle soreness and injury.";
+        }
+        return planProgram;
+      }
+
+      function getWelcomeMessage() {
+        const fullName = getFullName();
+        let welcomeMessage = `Hey ${fullName}, here is your personal running plan!`;
+        return welcomeMessage;
+      }
+
+      function getPlanDescription() {
+        let planDescription =
+          "By following this very short running plan and adjusting the running and walking intervals to suit your fitness level and primary goal, you can start building your endurance and working towards achieving your fitness goals.";
+        return planDescription;
+      }
+
+      function generatePlan() {
+        const welcomeMessage = getWelcomeMessage()
+        const planProgram = getPlanProgram()
+        const planDescription = getPlanDescription()
+        const plan =
+          welcomeMessage +
+          "\n" +
+          "\n" +
+          planProgram +
+          "\n" +
+          "\n" +
+          planDescription;
+        alert(plan);
+      }
+
+      let generatePlanButton = document.querySelector(".generate-plan-button");
+      generatePlanButton.addEventListener("click", generatePlan);
+    </script>
+  </body>
+</html>
